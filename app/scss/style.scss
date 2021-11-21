@@ -89,10 +89,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: rgba($accent, 0.2);
+  background-color: $accent;
   &__inner {
     margin: 0 auto;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
   &__title {
@@ -103,7 +104,11 @@
     max-width: 271px;
     padding: 35px 21px;
   }
+  &__item-image {
+    margin: 0 auto;
+  }
   &__item-text {
+    text-align: center;
     margin-top: 15px;
     font-size: 16px;
     line-height: 21px;
@@ -183,8 +188,93 @@
   }
   &__item p {
     position: absolute;
-    font-weight: 500;
+    line-height: 31px;
+  }
+  &__item-title {
     font-size: 18px;
-    line-height: 23px;
+    font-weight: 500;
+    top: 20px;
+    max-width: 218px;
+    left: 15px;
+  }
+  &__item-price {
+    font-size: 16px;
+    bottom: 10px;
+    max-width: 218px;
+    left: 15px;
+  }
+  .big-item .services__item-title {
+    font-size: 24px;
+    max-width: 456px;
+  }
+  .big-item .services__item-subtitle {
+    font-size: 16px;
+    top: 80px;
+    left: 15px;
+  }
+  .big-item .services__item-time {
+    font-size: 16px;
+    top: 105px;
+    left: 15px;
+  }
+
+  .services__bottom .big-item .services__item-time {
+    top: 130px;
+    left: 15px;
+  }
+}
+
+.about {
+  &__title {
+    color: $black;
+    margin-bottom: 50px;
+  }
+  margin-top: 100px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #c4c4c4;
+  }
+  &__left_side {
+    width: 45%;
+  }
+  &__right_side {
+    width: 45%;
+  }
+  &__left_side-text {
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+  }
+  &__left_side-text span {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  &__right_side-text {
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+  }
+  &__items {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $black;
+  }
+  &__item-title {
+    text-align: center;
+    font-family: "PT Serif";
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 58px;
+    color: $accent;
+  }
+  &__item-text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
