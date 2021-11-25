@@ -11,7 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 </head>
 
 <body>
@@ -28,13 +27,19 @@
       <nav class="header__menu">
         <ul class="header__list">
           <li class="header__list-item">
-            <a href="#conn" class="header__list-link">Бронирование</a>
+            <a href="#" class="header__list-link">Бронирование</a>
           </li>
           <li class="header__list-item">
-            <a href="#services" class="header__list-link">Экскурсии</a>
+            <a href="#" class="header__list-link">Экскурсии</a>
           </li>
           <li class="header__list-item">
-            <a href="#about" class="header__list-link">Туры</a>
+            <a href="#" class="header__list-link">Туры</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__list-link">Об Африке</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__list-link">О нас</a>
           </li>
         </ul>
       </nav>
@@ -42,15 +47,13 @@
         <h1 class="header__title">Сафари по Африке</h1>
         <p class="header__content-text">Туры по самомым экзотическим местам<br>
           Поехали с нами за новыми впечатлениями!</p>
-        <a href="#conn" class="header__content-button button">Оставить заявку</a>
-        <a href="#places">
-          <img class="header__content-image" src="./images/header-arrow.svg" alt="image arrow-down">
-        </a>
+        <a href="#" class="header__content-button button">Оставить заявку</a>
+        <a href="#">
+          <img class="header__content-image" src="./images/header-arrow.svg" alt="image arrow-down"></a>
       </div>
     </div>
   </header>
-
-  <section class="places" id="places">
+  <section class="places">
     <div class="container">
       <div class="places__inner">
         <div class="places__item">
@@ -100,7 +103,6 @@
       </div>
     </div>
   </section>
-
   <section class="directions">
     <div class="container">
       <h4 class="directions__title title">Основные направления</h4>
@@ -136,92 +138,66 @@
       </div>
     </div>
   </section>
-
-  <section class="services" id="services">
+  <section class="services">
     <div class="container">
       <h4 class="services__title title">Популярные предложения</h4>
       <div class="services__inner">
-        <div class="services__item-1">
-          <div class="item-wraper">
-            <img data-fancybox="gallery" src="./images/services/namibia.jpg" alt="services image 1"
-              class="services__item-image">
+        <div class="services__top">
+          <div class="services__item">
+            <img src="./images/services/namibia.jpg" alt="services image 1" class="services__item-image">
             <p class="services__item-title">ПУТЕШЕСТВИЕ ПО НАМИБИИ</p>
             <p class="services__item-price">от 3000 $</p>
           </div>
-        </div>
-        <div class="services__item-2">
-          <div class="item-wraper">
-            <img data-fancybox="gallery" src="./images/services/kenia.jpg" alt="services image 2"
-              class="services__item-image">
+          <div class="services__item">
+            <img src="./images/services/kenia.jpg" alt="services image 2" class="services__item-image">
             <p class="services__item-title">КЛАССИКА КЕНИИ</p>
             <p class="services__item-price">от 3500 $</p>
           </div>
-        </div>
-        <div class="services__item-3">
-          <div class="item-wraper">
-            <img data-fancybox="gallery" src="./images/services/botsvanna.jpg" alt="services image 3"
-              class="services__item-image">
+          <div class="services__item">
+            <img src="./images/services/botsvanna.jpg" alt="services image 3" class="services__item-image">
             <p class="services__item-title">ИССЛЕДОВАНИЕ БОТСВАНЫ</p>
             <p class="services__item-price">от 2500 $</p>
           </div>
-        </div>
-        <div class="services__item-4">
-          <div class="item-wraper">
-            <img data-fancybox="gallery" src="./images/services/south-africa.jpg" alt="services image 4"
-              class="services__item-image">
+          <div class="services__item">
+            <img src="./images/services/south-africa.jpg" alt="services image 4" class="services__item-image">
             <p class="services__item-title">ПУТЕШЕСТВИЕ ЧЕРЕЗ 5 СТРАН ЮЖНОЙ АФРИКИ</p>
             <p class="services__item-price">от 5000 $</p>
           </div>
-        </div>
-        <div class="services__item-5 big-item">
-          <div class="item-wraper">
-            <img data-fancybox="gallery" src="./images/services/tanzania.jpg" alt="services image 5"
-              class="services__item-image">
+          <div class="services__item big-item">
+            <img src="./images/services/tanzania.jpg" alt="services image 5" class="services__item-image">
             <p class="services__item-title">САМЫЕ ПОПУЛЯРНЫЕ САФАРИ ПАРКИ И ЗАПОВЕДНИКИ ТАНЗАНИИ</p>
             <p class="services__item-subtitle">Танзания</p>
             <p class="services__item-time">7 дней / 6 ночей</p>
             <p class="services__item-price">от 1700 $</p>
           </div>
         </div>
-        <div class="services__item-6 big-item">
-          <div class="item-wraper">
-            <img data-fancybox="gallery" src="./images/services/adventure.jpg" alt="services image 6"
-              class="services__item-image">
+        <div class="services__bottom">
+          <div class="services__item big-item">
+            <img src="./images/services/adventure.jpg" alt="services image 6" class="services__item-image">
             <p class="services__item-title">ГРАНДИОЗНОЕ ПРИКЛЮЧЕНИЕ ПО 9 СТРАНАМ АФРИКИ</p>
             <p class="services__item-subtitle">ЮАР, Замбия, Намибия, Зимбабве, Ботсвана, Мозамбик, Танзания,
               Кения</p>
             <p class="services__item-time">24 дня / 23 ночи</p>
             <p class="services__item-price">от 6000 $</p>
           </div>
-        </div>
-        <div class="services__item-7">
-          <div class="item-wraper">
-            <img data-fancybox="gallery" src="./images/services/keyptown.jpg" alt="services image 7"
-              class="services__item-image">
+          <div class="services__item">
+            <img src="./images/services/keyptown.jpg" alt="services image 7" class="services__item-image">
             <p class="services__item-title">ВЕЛИКОЛЕПНЫЙ КЕЙПТАУН</p>
             <p class="services__item-price">от 200.000 руб.</p>
           </div>
-        </div>
-        <div class="services__item-8">
-          <div class="item-wraper">
-            <img data-fancybox="gallery" src="./images/services/adventure-of-south-africa.jpg" alt="services image 8"
+          <div class="services__item">
+            <img src="./images/services/adventure-of-south-africa.jpg" alt="services image 8"
               class="services__item-image">
             <p class="services__item-title">ПУТЕШЕСТВИЕ ПО ЮАР:</p>
             <p class="services__item-price">от 2500 $</p>
           </div>
-        </div>
-        <div class="services__item-9">
-          <div class="item-wraper">
-            <img data-fancybox="gallery" src="./images/services/zanzibar.jpg" alt="services image 9"
-              class="services__item-image">
+          <div class="services__item">
+            <img src="./images/services/zanzibar.jpg" alt="services image 9" class="services__item-image">
             <p class="services__item-title">ВЕЛИКАЯ МИГРАЦИЯ В ТАНЗАНИИ И ОТДЫХ НА ЗАНЗИБАРЕ</p>
             <p class="services__item-price">от 1700 $</p>
           </div>
-        </div>
-        <div class="services__item-10">
-          <div class="item-wraper">
-            <img data-fancybox="gallery" src="./images/services/waterfall.jpg" alt="services image 10"
-              class="services__item-image">
+          <div class="services__item">
+            <img src="./images/services/waterfall.jpg" alt="services image 10" class="services__item-image">
             <p class="services__item-title">ОТ КЕЙПТАУНА ДО ВОДОПАДА ВИКТОРИЯ</p>
             <p class="services__item-price">от 2500 $</p>
           </div>
@@ -229,8 +205,7 @@
       </div>
     </div>
   </section>
-
-  <section class="about" id="about">
+  <section class="about">
     <div class="container">
       <h4 class="about__title title">Сафари тур премиум класса</h4>
       <div class="about__content">
@@ -248,7 +223,7 @@
           <br>
           <p class="about__left_side-text">Если вы желаете отправиться в самое незабываемое путешествие в вашей жизни,
             побывать в уникальных местах и увидеть то,
-            что удается лицезреть немногим? Тогда сафари туры созданы для вас.</p>
+            что удается лицезреть немногим ? тогда сафари туры созданы для вас.</p>
         </div>
         <div class="about__right_side">
           <p class="about__right_side-text">Сафари туры выбирают туристы, которые предпочитают динамичный, яркий,
@@ -296,7 +271,7 @@
     </div>
   </section>
 
-  <section class="conn" id="conn">
+  <section class="conn">
     <div class="container">
       <h4 class="conn__title title">Забронируйте отдых в Африке</h4>
       <form class="conn__forms">
@@ -306,7 +281,7 @@
           <input type="text" class="conn__forms-input" placeholder="E-mail">
         </div>
         <textarea name="Форма комментариев" class="conn__forms-textarea" placeholder="Комментарий"></textarea>
-        <button data-fancybox="dialog" data-src="#dialog-content" class="conn__button button">Оставить заявку</button>
+        <button class="conn__button button">Оставить заявку</button>
       </form>
     </div>
   </section>
@@ -329,15 +304,6 @@
       </div>
     </div>
   </footer>
-
-  <div class="conn__popup" id="dialog-content" style="display:none;max-width:500px;">
-    <h2>Письмо отправлено</h2>
-    <p>
-      Ожидайте ответа на указаную почту в течение 2-3 часов. Спасибо, что заинтересованны в наших услугах.
-    </p>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

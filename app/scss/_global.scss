@@ -1,3 +1,8 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -22,7 +27,7 @@ body a {
 .container {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
 }
 
 .button {
@@ -35,4 +40,13 @@ body a {
     background-color: transparent;
     border: 1px solid $accent;
   }
+}
+
+.fancybox__image {
+  width: 300px;
+  height: 300px;
+}
+
+#dialog-content h2 {
+  margin-bottom: 20px;
 }
